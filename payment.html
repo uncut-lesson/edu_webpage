@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment | Uncut_Lesson</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site-config.js" defer></script>
+  <script src="site-config-apply.js" defer></script>
+  <script src="tracking-config.js" defer></script>
+  <script src="site-tracking.js" defer></script>
+  <script src="mobile-menu.js" defer></script>
+  <script src="page-animations.js" defer></script>
+  <script src="ad-popup.js" defer></script>
+  <script src="payment.js" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="assets/Logo.jpeg" alt="Uncut Lesson logo">
+        <span data-admin-text="brandName">Uncut_Lesson</span>
+      </a>
+      <nav class="nav-actions" aria-label="Primary">
+        <a href="index.html" class="nav-button">Home</a>
+        <a href="courses.html" class="nav-button">Courses</a>
+        <a href="access-video/index.html" class="nav-button">Learning</a>
+        <a href="refer-earn.html" class="nav-button referral-nav-button"><span aria-hidden="true">Rs</span>Refer &amp; Earn</a>
+        <a href="how-to-purchase.html" class="nav-button">How To Purchase</a>
+      </nav>
+      <div class="social-strip" aria-label="Social media">
+        <div class="social-links">
+          <a class="social-link" href="https://www.facebook.com/uncutlesson" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <img src="assets/Facebook.jpg" alt="Facebook">
+          </a>
+          <a class="social-link" href="https://www.instagram.com/uncut_lesson?igsh=anFiYTNqZTltdnk5" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <img src="assets/Instagram.jpg" alt="Instagram">
+          </a>
+        </div>
+      </div>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+    <main class="payment-page">
+      <section class="quiz-contest-banner quiz-contest-link" role="link" tabindex="0" data-quiz-url="course-quiz.html" aria-label="Play quiz and win 10 percent course discount">
+        <div class="quiz-contest-icon" aria-hidden="true">10%</div>
+        <div>
+          <p class="eyebrow">Quiz Contest</p>
+          <h2>Play Quiz And Win 10% Course Discount</h2>
+          <p>Score 16/20 or more and unlock instant discount on your selected course.</p>
+        </div>
+        <a class="free-video-link" data-track-label="Quiz Contest Banner" href="course-quiz.html">Play Quiz</a>
+      </section>
+      <section class="payment-intro-card">
+        <div>
+          <p class="eyebrow">Course Checkout</p>
+          <h1>Complete Payment And Request Course Access</h1>
+          <p>Pay with UPI, upload your payment screenshot, and your Gmail will be reviewed for Google Drive course access.</p>
+          <div class="payment-trust-row" aria-label="Payment highlights">
+            <span>UPI Payment</span>
+            <span>Google Drive Access</span>
+            <span>Email Alert</span>
+          </div>
+          <p class="payment-device-desktop">Desktop view keeps payment and access request side by side for faster checking.</p>
+          <p class="payment-device-mobile">Mobile view is arranged step by step so students can pay, upload, and submit without confusion.</p>
+        </div>
+        <div class="payment-intro-summary" aria-label="Selected payment details">
+          <p><span>Course</span><strong data-course-name>Selected Course</strong></p>
+          <p><span>Amount</span><strong data-course-price>Rs 0</strong></p>
+        </div>
+      </section>
+      <section class="payment-grid">
+        <article class="payment-card">
+          <div class="payment-card-heading">
+            <p class="eyebrow">Step 1</p>
+            <h2>Pay Securely</h2>
+            <p class="support-text">Use any UPI app and keep the amount same as the selected course price.</p>
+          </div>
+          <div class="qr-card">
+            <img src="assets/payment-qr.jpeg" alt="QR code for payment" data-admin-image="paymentQrImage">
+            <a class="download-qr-button" href="assets/payment-qr.jpeg" data-admin-href="paymentQrImage" download="Uncut-Lesson-payment-qr.jpeg">Download QR Code</a>
+          </div>
+          <p class="payment-line"><strong>Pay With UPI ID</strong></p>
+          <div class="upi-copy-row">
+            <p class="support-text" data-upi-id data-admin-text="upiId">alokmistri69-2@oksbi</p>
+            <button class="copy-upi-button" type="button" data-copy-upi>Copy UPI ID</button>
+          </div>
+          <a class="upi-pay-button" data-upi-pay href="upi://pay?pa=alokmistri69-2@oksbi&pn=Uncut%20Lesson" target="_blank" rel="noopener noreferrer">Open UPI App</a>
+        </article>
+
+        <article class="payment-card payment-card-strong">
+          <div class="payment-card-heading">
+            <p class="eyebrow">Step 2</p>
+            <h2>Submit Access Request</h2>
+            <p class="support-text">Your selected course is filled automatically. Change it only if needed before submitting.</p>
+          </div>
+          <div class="payment-summary-box">
+            <p><span>Selected Course</span><strong data-course-name>Selected Course</strong></p>
+            <p><span>Selected Price</span><strong data-course-price>Rs 0</strong></p>
+          </div>
+          <label class="payment-course-select">
+            <span>Change Course If Needed</span>
+            <select data-course-select aria-label="Select course for payment"></select>
+          </label>
+          <button class="payment-guide-button" type="button" data-payment-guide-open>Guide</button>
+          <form class="payment-access-form" data-payment-form>
+            <label class="payment-field">
+              <span>Student Name</span>
+              <input type="text" name="studentName" data-student-name autocomplete="name" required>
+            </label>
+            <label class="payment-field">
+              <span>Gmail For Drive Access</span>
+              <input type="email" name="studentEmail" data-student-email autocomplete="email" placeholder="uncutlesson@gmail.com" required>
+            </label>
+            <label class="payment-field">
+              <span>WhatsApp Number</span>
+              <input type="tel" name="studentPhone" data-student-phone autocomplete="tel" required>
+            </label>
+            <label class="payment-field">
+              <span>Transaction ID / UPI Ref</span>
+              <input type="text" name="transactionId" data-transaction-id placeholder="Optional but recommended">
+            </label>
+            <label class="payment-field">
+              <span>Referral Code</span>
+              <input type="text" name="referralCode" data-referral-code placeholder="Optional, example UL1001">
+            </label>
+            <label class="payment-field payment-field-wide">
+              <span>Payment Screenshot</span>
+              <input type="file" name="paymentScreenshot" data-payment-screenshot accept="image/*" required>
+            </label>
+            <button class="payment-submit-button" type="submit" data-payment-submit>Submit Payment Details</button>
+            <p class="payment-form-status" data-payment-status aria-live="polite"></p>
+          </form>
+          <p class="payment-note" data-admin-text="paymentHelpText">After verification, your Gmail will be added to the selected Google Drive course folder.</p>
+        </article>
+      </section>
+    </main>
+
+    <div class="payment-guide-overlay" data-payment-guide hidden>
+      <div class="payment-guide-panel" role="dialog" aria-modal="true" aria-labelledby="payment-guide-title">
+        <button class="payment-guide-close" type="button" data-payment-guide-close aria-label="Close guide">&times;</button>
+        <div class="payment-guide-heading">
+          <p class="eyebrow">Payment Guide</p>
+          <h2 id="payment-guide-title">How To Complete Payment</h2>
+        </div>
+        <div class="payment-guide-flow" aria-label="Payment process steps">
+          <article class="payment-guide-step">
+            <span>1</span>
+            <p>Pay the selected amount using QR or UPI ID.</p>
+          </article>
+          <div class="payment-guide-arrow" aria-hidden="true">→</div>
+          <article class="payment-guide-step">
+            <span>2</span>
+            <p>Take a screenshot of successful payment.</p>
+          </article>
+          <div class="payment-guide-arrow" aria-hidden="true">→</div>
+          <article class="payment-guide-step">
+            <span>3</span>
+            <p>Submit the form below to request Google Drive access.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div>
+        <a class="footer-brand" href="index.html">Uncut_Lesson</a>
+        <p>Practical online learning for computer, accounting, and business software skills.</p>
+      </div>
+      <div class="footer-links">
+        <a href="courses.html">Courses</a>
+        <a href="support.html">Support</a>
+        <a href="https://wa.me/917439034248" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

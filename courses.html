@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse Uncut Lesson practical software courses. Watch a free video, read course details, or purchase through the existing payment page.">
+  <title>Courses | Uncut Lesson</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site-config.js" defer></script>
+  <script src="site-config-apply.js" defer></script>
+  <script src="tracking-config.js" defer></script>
+  <script src="site-tracking.js" defer></script>
+  <script src="mobile-menu.js" defer></script>
+  <script src="page-animations.js" defer></script>
+  <script src="courses-filter.js" defer></script>
+  <script src="ad-popup.js" defer></script>
+  <script src="payment.js" defer></script>
+  <script src="free-resources.js" defer></script>
+  <script src="catalog-sync.js" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="Uncut Lesson home"><img class="brand-logo" src="assets/Logo.jpeg" alt="Uncut Lesson logo"><span>Uncut Lesson</span></a>
+      <nav class="nav-actions" aria-label="Primary navigation">
+        <a href="courses.html" class="nav-button nav-button-active">Courses</a>
+        <a href="support.html" class="nav-button">Support</a>
+        <a href="index.html#why-choose-us" class="nav-button">Why Choose Us</a>
+        <a href="refer-earn.html" class="nav-button">Refer &amp; Earn</a>
+        <a href="free-video.html" class="nav-button">Free Videos</a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </header>
+
+    <main class="courses-page">
+      <section class="catalog-hero">
+        <div>
+          <p class="eyebrow">Course catalogue</p>
+          <h1>Pick your skill. Preview it. Start when you’re ready.</h1>
+          <p>Every course has the same three simple steps: a free preview, details, and a direct payment option.</p>
+        </div>
+        <img src="assets/Student-Courses.jpg" alt="Students exploring Uncut Lesson courses" data-hero-slider>
+      </section>
+
+      <section class="catalog-tools" aria-label="Find a course">
+        <label class="catalog-search" for="course-search"><span aria-hidden="true">⌕</span><span class="sr-only">Search courses</span><input id="course-search" data-course-search-input type="search" placeholder="Search course or topic"></label>
+        <div class="course-choice-tabs" role="group" aria-label="Course filters">
+          <button class="course-choice-tab is-active" type="button" data-course-filter="all">All</button>
+          <button class="course-choice-tab" type="button" data-course-filter="popular">Popular</button>
+          <button class="course-choice-tab" type="button" data-course-filter="professional">Career skills</button>
+        </div>
+      </section>
+
+      <section class="course-list catalog-course-list" aria-label="All courses">
+        <article class="course-card premium-course-card" data-course-key="basic" data-course-category="popular foundation" data-course-search="ms basics basic word paint ms word">
+          <div class="course-card-visual"><img src="assets/Basic.jpg" alt="MS Basics course"><span class="course-badge">Free preview</span></div>
+          <div class="course-card-content"><p class="course-label">Foundation skills</p><h2>MS-Basics</h2><p>MS Word and Paint for everyday computer confidence.</p></div>
+          <div class="course-actions" aria-label="MS-Basics actions"><a class="preview-action" href="free-video-basic.html">Free video</a><a class="details-link" href="course-basic.html">Details</a><a class="course-price" href="payment.html?course=Basic%20Course&amp;price=Rs%2099">₹99</a></div>
+        </article>
+
+        <article class="course-card premium-course-card" data-course-key="advanced-excel" data-course-category="popular professional" data-course-search="advanced excel a-z formulas lookup pivot reporting access">
+          <div class="course-card-visual"><img src="assets/Advance Excel.jpg" alt="Advanced Excel course"><span class="course-badge">Bestseller</span></div>
+          <div class="course-card-content"><p class="course-label">Data &amp; reporting</p><h2>Advanced Excel A-Z</h2><p>Formulas, lookup, pivot tables, reports and data tools.</p></div>
+          <div class="course-actions" aria-label="Advanced Excel actions"><a class="preview-action" href="free-video-advanced-excel.html">Free video</a><a class="details-link" href="course-advanced-excel.html">Details</a><a class="course-price" href="payment.html?course=Advanced%20Excel%20%2B%20MS-Access&amp;price=Rs%20299">₹299</a></div>
+        </article>
+
+        <article class="course-card premium-course-card" data-course-key="tally-prime-gst" data-course-category="popular professional" data-course-search="tally prime gst tds inventory management accounting billing">
+          <div class="course-card-visual"><img src="assets/Tally Prime.jpg" alt="Tally Prime and GST course"><span class="course-badge offer-badge">Limited offer</span></div>
+          <div class="course-card-content"><p class="course-label">Accounting &amp; GST</p><h2>Tally Prime + GST</h2><p>GST, TDS, billing and inventory management.</p></div>
+          <div class="course-actions" aria-label="Tally Prime actions"><a class="preview-action" href="free-video-tally-prime-gst.html">Free video</a><a class="details-link" href="course-tally-prime-gst.html">Details</a><a class="course-price" href="payment.html?course=Tally%20Prime%20%2B%20GST&amp;price=Rs%20999">₹999</a></div>
+        </article>
+
+        <article class="course-card premium-course-card" data-course-key="power-bi" data-course-category="professional" data-course-search="power bi basic advanced dax dashboard power query data analytics">
+          <div class="course-card-visual"><img src="assets/Power BI.jpg" alt="Power BI course"><span class="course-badge">Free preview</span></div>
+          <div class="course-card-content"><p class="course-label">Business intelligence</p><h2>Power BI Basic to Advanced</h2><p>Data sets, Power Query, DAX and dashboard design.</p></div>
+          <div class="course-actions" aria-label="Power BI actions"><a class="preview-action" href="free-video-power-bi.html">Free video</a><a class="details-link" href="course-power-bi.html">Details</a><a class="course-price" href="payment.html?course=Power%20BI%20A%20to%20Z&amp;price=Rs%201999">₹1999</a></div>
+        </article>
+
+        <article class="course-card premium-course-card" data-course-key="sap-fico" data-course-category="professional" data-course-search="sap fico financial accounting general ledger cost center accounts payable">
+          <div class="course-card-visual"><img src="assets/SAP-FICO.jpg" alt="SAP FICO course"><span class="course-badge">Career skill</span></div>
+          <div class="course-card-content"><p class="course-label">Enterprise finance</p><h2>SAP FICO</h2><p>General ledger, payable accounts and cost centres.</p></div>
+          <div class="course-actions" aria-label="SAP FICO actions"><a class="preview-action" href="free-video-sap-fico.html">Free video</a><a class="details-link" href="course-sap-fico.html">Details</a><a class="course-price" href="payment.html?course=SAP%20FICO&amp;price=Rs%20999">₹999</a></div>
+        </article>
+
+        <article class="course-card premium-course-card" data-course-key="sap-s4-hana" data-course-category="professional" data-course-search="sap 4 hana s4 hana fiori reporting finance master data">
+          <div class="course-card-visual"><img src="assets/SAP S4 HANA.jpg" alt="SAP 4 HANA course"><span class="course-badge">Career skill</span></div>
+          <div class="course-card-content"><p class="course-label">Enterprise systems</p><h2>SAP 4 HANA</h2><p>Fiori, finance modules, master data and reporting.</p></div>
+          <div class="course-actions" aria-label="SAP 4 HANA actions"><a class="preview-action" href="free-video-sap-s4-hana.html">Free video</a><a class="details-link" href="course-sap-s4-hana.html">Details</a><a class="course-price" href="payment.html?course=SAP%20S4%20HANA&amp;price=Rs%20999">₹999</a></div>
+        </article>
+
+        <article class="course-card premium-course-card" data-course-key="peachtree" data-course-category="professional" data-course-search="microsoft peachtree accounting sales purchase reports inventory">
+          <div class="course-card-visual"><img src="assets/Peachtree.jpg" alt="Microsoft Peachtree course"><span class="course-badge">Free preview</span></div>
+          <div class="course-card-content"><p class="course-label">Business accounting</p><h2>Microsoft Peachtree</h2><p>Company setup, sales, purchase, inventory and reports.</p></div>
+          <div class="course-actions" aria-label="Microsoft Peachtree actions"><a class="preview-action" href="free-video-microsoft-peachtree.html">Free video</a><a class="details-link" href="course-microsoft-peachtree.html">Details</a><a class="course-price" href="payment.html?course=Microsoft%20Peachtree&amp;price=Rs%20999">₹999</a></div>
+        </article>
+
+        <article class="course-card premium-course-card" data-course-key="tally-erp" data-course-category="foundation" data-course-search="tally erp voucher inventory accounting reports">
+          <div class="course-card-visual"><img src="assets/Tally ERP.jpg" alt="Tally ERP course"><span class="course-badge">More to learn</span></div>
+          <div class="course-card-content"><p class="course-label">Accounting basics</p><h2>Tally ERP</h2><p>Voucher entry, inventory and accounting reports.</p></div>
+          <div class="course-actions" aria-label="Tally ERP actions"><a class="preview-action" href="free-video-tally-erp.html">Free video</a><a class="details-link" href="course-tally-erp.html">Details</a><a class="course-price" href="payment.html?course=Tally%20ERP&amp;price=Rs%20999">₹999</a></div>
+        </article>
+      </section>
+      <p class="course-empty-state" data-course-empty hidden>No course matches that search. Try “Excel”, “Tally”, “SAP” or “Power BI”.</p>
+
+      <section class="catalog-note"><div><p class="eyebrow">Not sure yet?</p><h2>Start with the free video.</h2><p>It’s the quickest way to see the course style and the topics you will learn.</p></div><a class="secondary-cta" href="free-video.html">Browse free videos</a></section>
+    </main>
+
+    <footer class="site-footer"><div><a class="footer-brand" href="index.html">Uncut Lesson</a><p>Practical learning for real work.</p></div></footer>
+  </div>
+</body>
+</html>

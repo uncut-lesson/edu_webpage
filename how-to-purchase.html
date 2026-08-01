@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guide | Uncut_Lesson</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site-config.js" defer></script>
+  <script src="site-config-apply.js" defer></script>
+  <script src="tracking-config.js" defer></script>
+  <script src="site-tracking.js" defer></script>
+  <script src="mobile-menu.js" defer></script>
+  <script src="page-animations.js" defer></script>
+  <script src="ad-popup.js" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="assets/Logo.jpeg" alt="Uncut Lesson logo">
+        <span>Uncut_Lesson</span>
+      </a>
+      <nav class="nav-actions" aria-label="Primary">
+        <a href="index.html" class="nav-button">Home</a>
+        <a href="courses.html" class="nav-button">Courses</a>
+        <a href="access-video/index.html" class="nav-button">Learning</a>
+        <a href="refer-earn.html" class="nav-button referral-nav-button"><span aria-hidden="true">Rs</span>Refer &amp; Earn</a>
+        <a href="how-to-purchase.html" class="nav-button nav-button-active">Guide</a>
+      </nav>
+      <div class="social-strip" aria-label="Social media">
+        <div class="social-links">
+          <a class="social-link" href="https://www.facebook.com/uncutlesson" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <img src="assets/Facebook.jpg" alt="Facebook">
+          </a>
+          <a class="social-link" href="https://www.instagram.com/uncut_lesson?igsh=anFiYTNqZTltdnk5" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <img src="assets/Instagram.jpg" alt="Instagram">
+          </a>
+        </div>
+      </div>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <main class="course-topics-page">
+      <section class="quiz-contest-banner quiz-contest-link" role="link" tabindex="0" data-quiz-url="course-quiz.html" aria-label="Play quiz and win 10 percent course discount">
+        <div class="quiz-contest-icon" aria-hidden="true">10%</div>
+        <div>
+          <p class="eyebrow">Quiz Contest</p>
+          <h2>Play Quiz And Win 10% Course Discount</h2>
+          <p>Score 16/20 or more and unlock instant discount on your selected course.</p>
+        </div>
+        <a class="free-video-link" data-track-label="Quiz Contest Banner" href="course-quiz.html">Play Quiz</a>
+      </section>
+      <section class="course-topics-hero">
+        <div>
+          <p class="eyebrow">Website Guide</p>
+          <h1>Guide</h1>
+          <p class="hero-text">Find clear answers for purchase, payment proof, free videos, course access, all courses, and support.</p>
+        </div>
+        <div class="course-hero-actions">
+          <a class="back-link" href="courses.html">View Courses</a>
+          <a class="whatsapp-details-link" data-track-label="WhatsApp Button" href="https://wa.me/917439034248" target="_blank" rel="noopener noreferrer">WhatsApp For Help</a>
+        </div>
+      </section>
+
+      <section class="guide-faq-card" aria-label="Website guide questions">
+        <details>
+          <summary>How To Purchase A Course?</summary>
+          <ol>
+            <li>Open the Courses page and choose your course.</li>
+            <li>Click the course price button, such as Rs 499 or Rs 999.</li>
+            <li>The payment page opens with your selected course and amount.</li>
+            <li>Pay using the QR code, UPI ID, or Open UPI App button.</li>
+            <li>Submit your details and payment screenshot from the payment form.</li>
+            <li>After verification, your Gmail will be added for Google Drive course access.</li>
+          </ol>
+        </details>
+
+        <details>
+          <summary>How To Send Payment Proof?</summary>
+          <ol>
+            <li>After payment, take a clear screenshot showing successful payment.</li>
+            <li>On the payment page, enter your name, Gmail, WhatsApp number, and transaction ID if available.</li>
+            <li>If your friend gave you a referral code, enter it in the Referral Code field.</li>
+            <li>Upload the payment screenshot in the Payment Screenshot field.</li>
+            <li>Click Submit Payment Details and wait for the confirmation message.</li>
+            <li>If the form does not work, send the screenshot and details on WhatsApp.</li>
+          </ol>
+        </details>
+
+        <details id="referral-code">
+          <summary>How Does Referral Code Work?</summary>
+          <ol>
+            <li>You create a unique referral code manually for each person, such as UL1001, UL1002, UL1003.</li>
+            <li>Give that code to the student who wants to refer friends.</li>
+            <li>The student shares the code in WhatsApp groups or with friends.</li>
+            <li>When a friend buys a course, they enter that referral code on the payment page.</li>
+            <li>After payment verification, you check the code in your Google Sheet and count the referral manually.</li>
+            <li>Give reward only after confirming the payment is real.</li>
+          </ol>
+        </details>
+
+        <details>
+          <summary>How Can I Access Free Videos?</summary>
+          <ol>
+            <li>Open the Home page and click Free Videos in the top menu.</li>
+            <li>Choose the course category you want to preview.</li>
+            <li>Click Watch Free Video to open the free topic list.</li>
+            <li>Select any free topic and watch the sample lesson.</li>
+          </ol>
+        </details>
+
+        <details>
+          <summary>How Can I See All Courses?</summary>
+          <ol>
+            <li>Click Courses from the top menu.</li>
+            <li>Use All, Popular, or New filters to browse course choices.</li>
+            <li>Click Details to see course topics and course information.</li>
+            <li>Click the price button to purchase the selected course.</li>
+          </ol>
+        </details>
+
+        <details>
+          <summary>How To Access Purchased Videos?</summary>
+          <ol>
+            <li>Click Learning from the top menu.</li>
+            <li>Select your purchased course from the access video list.</li>
+            <li>Use the same Gmail you submitted after payment.</li>
+            <li>If Google Drive asks for access, wait for approval or contact support.</li>
+          </ol>
+        </details>
+
+        <details>
+          <summary>How To Connect With Us?</summary>
+          <ol>
+            <li>Use the Support page for help and contact options.</li>
+            <li>Click WhatsApp For Help on this page for quick support.</li>
+            <li>You can also use the social icons in the top bar for Facebook and Instagram.</li>
+            <li>For payment or access issues, share your course name, Gmail, WhatsApp number, and payment screenshot.</li>
+          </ol>
+        </details>
+
+        <details>
+          <summary>Other Common Website Questions</summary>
+          <ul>
+            <li><strong>Can I watch before purchase?</strong> Yes, use the Free Videos section on the Home page.</li>
+            <li><strong>Where do I pay?</strong> Open a course and click the price button to go to the payment page.</li>
+            <li><strong>Which Gmail should I submit?</strong> Submit the Gmail you will use to open Google Drive videos.</li>
+            <li><strong>When will access start?</strong> Access starts after payment verification and Gmail approval.</li>
+            <li><strong>What if I selected the wrong course?</strong> Change the course on the payment page before submitting.</li>
+            <li><strong>How do I get a discount?</strong> Play the quiz contest and score 16/20 or more for the discount.</li>
+            <li><strong>Is referral code required?</strong> No. It is optional. Enter it only if someone referred you.</li>
+          </ul>
+        </details>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <a class="footer-brand" href="index.html">Uncut_Lesson</a>
+        <p>Practical online learning for computer, accounting, and business software skills.</p>
+      </div>
+      <div class="footer-links">
+        <a href="courses.html">Courses</a>
+        <a href="support.html">Support</a>
+        <a href="https://wa.me/917439034248" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

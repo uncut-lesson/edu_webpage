@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Refer &amp; Earn | Uncut_Lesson</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site-config.js" defer></script>
+  <script src="site-config-apply.js" defer></script>
+  <script src="tracking-config.js" defer></script>
+  <script src="site-tracking.js" defer></script>
+  <script src="mobile-menu.js" defer></script>
+  <script src="page-animations.js" defer></script>
+  <script src="ad-popup.js" defer></script>
+  <script src="refer-earn.js" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="assets/Logo.jpeg" alt="Uncut Lesson logo">
+        <span data-admin-text="brandName">Uncut_Lesson</span>
+      </a>
+      <nav class="nav-actions" aria-label="Primary">
+        <a href="index.html" class="nav-button">Home</a>
+        <a href="courses.html" class="nav-button">Courses</a>
+        <a href="access-video/index.html" class="nav-button">Learning</a>
+        <a href="refer-earn.html" class="nav-button referral-nav-button nav-button-active"><span aria-hidden="true">Rs</span>Refer &amp; Earn</a>
+        <a href="how-to-purchase.html" class="nav-button">Guide</a>
+      </nav>
+      <div class="social-strip" aria-label="Social media">
+        <div class="social-links">
+          <a class="social-link" href="https://www.facebook.com/uncutlesson" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <img src="assets/Facebook.jpg" alt="Facebook">
+          </a>
+          <a class="social-link" href="https://www.instagram.com/uncut_lesson?igsh=anFiYTNqZTltdnk5" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <img src="assets/Instagram.jpg" alt="Instagram">
+          </a>
+        </div>
+      </div>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <main class="refer-page">
+      <section class="refer-hero">
+        <div class="refer-burst refer-burst-left" aria-hidden="true"></div>
+        <div class="refer-burst refer-burst-right" aria-hidden="true"></div>
+        <div class="refer-megaphone refer-megaphone-left" aria-hidden="true"></div>
+        <div class="refer-megaphone refer-megaphone-right" aria-hidden="true"></div>
+        <div class="refer-hero-copy">
+          <p class="refer-kicker">Share More, Earn More</p>
+          <h1><span>Refer &amp;</span> <strong>Earn</strong></h1>
+          <p>Invite your friends to learn with Uncut_Lesson. When they purchase using your referral code, you earn rewards.</p>
+          <a class="refer-share-button" href="#create-referral">Create Referral Code</a>
+        </div>
+        <div class="refer-gift" aria-hidden="true">
+          <span></span>
+        </div>
+      </section>
+
+      <section class="refer-generator-card" id="create-referral">
+        <div class="refer-generator-copy">
+          <p class="eyebrow">Create Your Code</p>
+          <h2>Generate Referral Code And Link</h2>
+          <p>Create your code, share it with friends, and earn rewards after their course purchase is verified.</p>
+        </div>
+        <form class="refer-generator-form" data-referral-form>
+          <label>
+            <span>Your Name</span>
+            <input type="text" name="referrerName" data-referrer-name autocomplete="name" required>
+          </label>
+          <label>
+            <span>Your Gmail</span>
+            <input type="email" name="referrerEmail" data-referrer-email autocomplete="email" placeholder="example@gmail.com" required>
+          </label>
+          <label>
+            <span>WhatsApp Number</span>
+            <input type="tel" name="referrerPhone" data-referrer-phone autocomplete="tel" required>
+          </label>
+          <button type="submit" data-referral-submit>Generate Code</button>
+          <p class="refer-generator-status" data-referral-status aria-live="polite"></p>
+        </form>
+        <div class="refer-result-card" data-referral-result hidden>
+          <p>Your Referral Code</p>
+          <strong data-generated-code>UL1001</strong>
+          <label>
+            <span>Your Referral Link</span>
+            <input type="text" data-generated-link readonly>
+          </label>
+          <label>
+            <span>Share Text</span>
+            <textarea data-generated-message readonly></textarea>
+          </label>
+          <div class="refer-result-actions">
+            <button type="button" data-copy-referral>Copy Text</button>
+            <a href="#" target="_blank" rel="noopener noreferrer" data-share-whatsapp>Share On WhatsApp</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="refer-board" aria-label="Referral rules and rewards">
+        <article class="refer-rules-card">
+          <h2>Referral Rules</h2>
+          <ol class="refer-rule-list">
+            <li>
+              <span class="refer-rule-icon">01</span>
+              <div>
+                <h3>Share Your Link</h3>
+                <p>Share your referral code or link with your friends and groups.</p>
+              </div>
+            </li>
+            <li>
+              <span class="refer-rule-icon">02</span>
+              <div>
+                <h3>Friends Use This</h3>
+                <p>Your friends enter your code at the time of purchase.</p>
+              </div>
+            </li>
+            <li>
+              <span class="refer-rule-icon">03</span>
+              <div>
+                <h3>Friends Successfully Purchased</h3>
+                <p>The referral is counted only after payment is verified.</p>
+              </div>
+            </li>
+            <li>
+              <span class="refer-rule-icon">04</span>
+              <div>
+                <h3>You Get Reward</h3>
+                <p>Once the purchase is confirmed, your reward will be credited.</p>
+              </div>
+            </li>
+          </ol>
+        </article>
+
+        <article class="refer-rewards-card">
+          <h2>Your Rewards</h2>
+          <div class="refer-reward-box">
+            <p>Earn</p>
+            <strong>Rs 20</strong>
+            <span>For each successful referral purchase</span>
+          </div>
+          <div class="refer-special-box">
+            <p>Special Reward</p>
+            <strong>Rs 50</strong>
+            <span>Refer 5 times and get extra Rs 50 reward.</span>
+          </div>
+        </article>
+      </section>
+
+      <section class="refer-why">
+        <h2>Why Refer?</h2>
+        <div class="refer-why-grid">
+          <article>
+            <span>1</span>
+            <h3>Help To Learn</h3>
+            <p>Help your friends discover useful course skills and learn together.</p>
+          </article>
+          <article>
+            <span>2</span>
+            <h3>Enjoy Exclusive Reward</h3>
+            <p>Earn rewards for every verified successful referral.</p>
+          </article>
+          <article>
+            <span>3</span>
+            <h3>It Is Very Simple And Rewarding</h3>
+            <p>Share your code, your friend buys a course, and you get rewarded.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="refer-cta">
+        <div>
+          <h2>Start Referring Today</h2>
+          <p>Create your unique referral code and start sharing it now.</p>
+        </div>
+        <a href="#create-referral">Create Code</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <a class="footer-brand" href="index.html">Uncut_Lesson</a>
+        <p>Practical online learning for computer, accounting, and business software skills.</p>
+      </div>
+      <div class="footer-links">
+        <a href="courses.html">Courses</a>
+        <a href="support.html">Support</a>
+        <a href="https://wa.me/917439034248" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MS-Basic Discount Quiz | Uncut_Lesson</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site-config.js" defer></script>
+  <script src="site-config-apply.js" defer></script>
+  <script src="tracking-config.js" defer></script>
+  <script src="site-tracking.js" defer></script>
+  <script src="mobile-menu.js" defer></script>
+  <script src="page-animations.js" defer></script>
+  <script src="quiz.js" defer></script>
+  <script src="ad-popup.js" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="assets/Logo.jpeg" alt="Uncut Lesson logo">
+        <span>Uncut_Lesson</span>
+      </a>
+      <nav class="nav-actions" aria-label="Primary">
+        <a href="index.html" class="nav-button">Home</a>
+        <a href="courses.html" class="nav-button">Courses</a>
+        <a href="access-video/index.html" class="nav-button">Learning</a>
+        <a href="refer-earn.html" class="nav-button referral-nav-button"><span aria-hidden="true">Rs</span>Refer &amp; Earn</a>
+        <a href="how-to-purchase.html" class="nav-button">How To Purchase</a>
+      </nav>
+      <div class="social-strip" aria-label="Social media">
+        <div class="social-links">
+          <a class="social-link" href="https://www.facebook.com/uncutlesson" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <img src="assets/Facebook.jpg" alt="Facebook">
+          </a>
+          <a class="social-link" href="https://www.instagram.com/uncut_lesson?igsh=anFiYTNqZTltdnk5" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <img src="assets/Instagram.jpg" alt="Instagram">
+          </a>
+        </div>
+      </div>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <main class="quiz-page">
+      <section class="course-topics-hero">
+        <div>
+          <p class="eyebrow">Discount Quiz</p>
+          <h1 data-quiz-title>MS-Basic Quiz</h1>
+          <p class="hero-text" data-quiz-description>Answer 20 MS-Basic, MS-Word, and MS-Paint shortcut questions. Score 16 or more to become eligible for 10% discount on the Basic Course.</p>
+          <div class="course-meta">
+            <span class="meta-pill">Passing Score: 16/20</span>
+            <span class="meta-pill">Discount: 10%</span>
+            <span class="meta-pill">Quiz ID: <strong data-quiz-id></strong></span>
+          </div>
+        </div>
+        <div class="course-hero-actions">
+          <a class="back-link" href="course-basic.html" data-quiz-back>Back To Basic Course</a>
+          <a class="whatsapp-details-link" data-track-label="WhatsApp Button" href="https://wa.me/917439034248" target="_blank" rel="noopener noreferrer">WhatsApp For Help</a>
+        </div>
+      </section>
+
+      <form class="quiz-card" data-quiz-form>
+        <section class="quiz-google-form-card" aria-label="Student survey form">
+          <div>
+            <h2>Submit Your Details For Survey And Updated Details</h2>
+            <p>Fill the Google Form first so we can keep your course and quiz details updated.</p>
+          </div>
+          <button class="secondary-cta quiz-google-form-button" type="button" data-google-form-open><span class="google-form-logo" aria-hidden="true">G</span><span>Submit Google Form</span></button>
+          <p class="quiz-google-form-status" data-google-form-status hidden></p>
+        </section>
+
+        <section class="quiz-topic-picker" aria-label="Quiz topic">
+          <label>
+            <span>Quiz Topic</span>
+            <select name="quiz-topic" data-quiz-topic required></select>
+          </label>
+        </section>
+
+        <section class="quiz-instructions">
+          <h2>Choose The Correct Answer</h2>
+          <p>Submit the Google Form, click Start Quiz, then answer one question at a time. Each question has 30 seconds.</p>
+        </section>
+
+        <section class="quiz-control-panel" aria-label="Quiz controls">
+          <div class="quiz-status-pill">
+            <span data-quiz-progress>Question 0/20</span>
+          </div>
+          <div class="quiz-status-pill quiz-timer-pill">
+            <span>Time: </span><strong data-quiz-timer>30</strong><span>s</span>
+          </div>
+        </section>
+
+        <button class="primary-cta quiz-start-button" type="button" data-quiz-start disabled>Start Quiz</button>
+        <p class="quiz-save-status" data-quiz-start-status hidden></p>
+
+        <section class="quiz-question-list" data-quiz-questions aria-label="MS-Basic quiz questions" hidden></section>
+
+        <button class="primary-cta quiz-next-button" type="button" data-quiz-next hidden disabled>Next Question</button>
+
+        <button class="primary-cta quiz-submit-button" type="submit" data-quiz-submit hidden disabled>Submit Quiz</button>
+      </form>
+
+      <section class="quiz-result" data-quiz-result hidden></section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <a class="footer-brand" href="index.html">Uncut_Lesson</a>
+        <p>Practical online learning for computer, accounting, and business software skills.</p>
+      </div>
+      <div class="footer-links">
+        <a href="courses.html">Courses</a>
+        <a href="support.html">Support</a>
+        <a href="https://wa.me/917439034248" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
