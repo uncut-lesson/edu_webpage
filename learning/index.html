@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning | Uncut_Lesson</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="learning.css">
+  <script src="learning.js" defer></script>
+  <script src="../free-resources.js" defer></script>
+</head>
+<body>
+  <div class="learning-shell">
+    <header class="learning-topbar">
+      <a class="learning-brand" href="../index.html">
+        <img src="../assets/Logo.jpeg" alt="Uncut Lesson logo">
+        <span>Uncut_Lesson Learning</span>
+      </a>
+      <nav class="learning-nav" aria-label="Learning navigation">
+        <a href="../index.html">Home</a>
+        <a href="../courses.html">Courses</a>
+        <a href="../support.html">Support</a>
+        <a href="../index.html#why-choose-us">Why Choose Us</a>
+        <a href="../free-video.html">Free Videos</a>
+        <a href="../access-video/index.html" aria-current="page">Learning</a>
+        <a class="learning-referral-link" href="../refer-earn.html">Refer &amp; Earn</a>
+        <a href="../payment.html">Payment</a>
+      </nav>
+    </header>
+
+    <main class="learning-page">
+      <section class="learning-hero">
+        <div>
+          <p class="learning-eyebrow" data-course-label>Course Learning Page</p>
+          <h1 data-course-title>Loading Course</h1>
+          <p data-course-description>Course topics and video access will appear here.</p>
+          <div class="learning-meta">
+            <span data-course-count>0 Videos</span>
+            <span data-course-duration>0 min</span>
+            <span>Private Drive Access</span>
+          </div>
+        </div>
+        <img data-course-image src="../assets/Offer.jpg" alt="Course preview">
+      </section>
+
+      <section class="learning-access-note">
+        <strong>Important Access Note</strong>
+        <p>Use the same Gmail you submitted after payment. If your Gmail is not approved in Google Drive, Google will show access denied or request access.</p>
+      </section>
+
+      <section class="learning-layout">
+        <aside class="learning-sidebar">
+          <p class="learning-eyebrow">Course Summary</p>
+          <h2 data-sidebar-title>Course</h2>
+          <p data-sidebar-text>Watch the lessons in order and practice after each topic.</p>
+          <a href="../payment.html" data-payment-link>Buy / Submit Payment</a>
+        </aside>
+
+        <section class="learning-topic-list" data-topic-list aria-label="Course video topics"></section>
+      </section>
+
+      <section class="learning-resource-section" aria-label="Download free resources">
+        <div>
+          <p class="learning-eyebrow">Download Free Resources</p>
+          <h2>PDF And Drive Folder Downloads</h2>
+        </div>
+        <div class="free-resource-list" data-free-resource-list></div>
+      </section>
+    </main>
+    <section class="learning-ad" aria-label="Featured course offer">
+      <img src="../assets/Offer.jpg" alt="Uncut Lesson featured course offer">
+      <div><p class="learning-eyebrow">Featured offer</p><h2>Keep building practical skills.</h2><p>Explore another course whenever you are ready.</p><a href="../courses.html">View courses</a></div>
+    </section>
+    <footer class="learning-footer">
+      <span>Uncut Lesson · For educational purposes</span>
+      <div><a href="https://www.facebook.com/uncutlesson" target="_blank" rel="noopener noreferrer">Facebook</a><a href="https://www.instagram.com/uncut_lesson?igsh=anFiYTNqZTltdnk5" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://wa.me/917439034248" target="_blank" rel="noopener noreferrer">WhatsApp</a></div>
+    </footer>
+  </div>
+
+  <div class="drive-warning" data-drive-warning hidden>
+    <div class="drive-warning-card" role="dialog" aria-modal="true" aria-labelledby="drive-warning-title">
+      <h2 id="drive-warning-title">Google Drive Access Required</h2>
+      <p>This video opens from Google Drive. Please continue only with the Gmail you submitted after payment.</p>
+      <p>If access is denied, your Gmail is not approved yet. Contact support or wait for verification.</p>
+      <div class="drive-warning-actions">
+        <button type="button" data-close-warning>Cancel</button>
+        <a href="#" target="_blank" rel="noopener noreferrer" data-open-video>Open Video</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

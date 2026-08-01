@@ -1,0 +1,243 @@
+:root {
+  --bg: #eef4ff;
+  --text: #16325c;
+  --muted: #5f7494;
+  --primary: #1f6fff;
+  --teal: #0f9f8f;
+  --accent: #ffb200;
+  --line: rgba(22, 50, 92, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Manrope", sans-serif;
+  color: var(--text);
+  background:
+    linear-gradient(rgba(248, 251, 255, 0.92), rgba(238, 245, 255, 0.96)),
+    url("../assets/Logo Background.jpeg") center / cover fixed no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.builder-shell {
+  width: min(1180px, calc(100% - 32px));
+  margin: 22px auto 42px;
+  display: grid;
+  gap: 16px;
+}
+
+.builder-hero,
+.builder-tabs,
+.builder-panel {
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 18px 46px rgba(22, 50, 92, 0.1);
+}
+
+.builder-hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: center;
+  padding: 26px;
+}
+
+.builder-eyebrow {
+  margin: 0;
+  color: var(--primary);
+  font-size: 0.82rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.builder-hero h1,
+.builder-title h2 {
+  margin: 8px 0 8px;
+  font-family: "Outfit", sans-serif;
+  line-height: 1.02;
+}
+
+.builder-hero h1 {
+  font-size: clamp(2.1rem, 5vw, 4rem);
+}
+
+.builder-title h2 {
+  font-size: clamp(1.5rem, 3vw, 2.3rem);
+}
+
+.builder-hero p:not(.builder-eyebrow),
+.builder-status {
+  margin: 0;
+  color: var(--muted);
+  font-weight: 800;
+  line-height: 1.55;
+}
+
+.builder-links,
+.builder-tabs,
+.builder-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.builder-links a,
+.builder-tabs button,
+.builder-actions button,
+.builder-form button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  border: 0;
+  border-radius: 999px;
+  font: inherit;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.builder-links a,
+.builder-actions button {
+  padding: 0 18px;
+  background: linear-gradient(135deg, var(--primary), var(--teal));
+  color: #ffffff;
+}
+
+.builder-tabs {
+  padding: 12px;
+}
+
+.builder-tabs button {
+  padding: 0 16px;
+  background: #f7fbff;
+  color: var(--text);
+  border: 1px solid var(--line);
+}
+
+.builder-tabs button.is-active {
+  color: #ffffff;
+  background: linear-gradient(135deg, var(--primary), var(--teal));
+  border-color: transparent;
+}
+
+.builder-panel {
+  display: grid;
+  gap: 15px;
+  padding: 22px;
+}
+
+.builder-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 180px auto;
+  gap: 12px;
+  align-items: end;
+}
+
+.course-card-form {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.free-video-form {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) 170px auto;
+}
+
+.resource-form {
+  grid-template-columns: 220px auto;
+}
+
+label,
+.builder-row label {
+  display: grid;
+  gap: 7px;
+  color: #27466f;
+  font-weight: 900;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  border: 1px solid rgba(22, 50, 92, 0.14);
+  border-radius: 12px;
+  background: #fbfdff;
+  color: var(--text);
+  font: inherit;
+  font-weight: 800;
+  padding: 11px 12px;
+  outline: none;
+}
+
+.builder-form button {
+  padding: 0 16px;
+  color: #071b36;
+  background: linear-gradient(135deg, #ffc21a, #ff9e12);
+}
+
+.builder-list {
+  display: grid;
+  gap: 10px;
+}
+
+.builder-row {
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr) minmax(0, 1.35fr);
+  gap: 12px;
+  align-items: end;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #ffffff;
+}
+
+.builder-number {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  background: #f7fbff;
+  color: var(--primary);
+  font-weight: 900;
+}
+
+.builder-output {
+  min-height: 230px;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  resize: vertical;
+}
+
+@media (max-width: 800px) {
+  .builder-shell {
+    width: calc(100% - 12px);
+    margin: 8px auto 24px;
+  }
+
+  .builder-hero,
+  .builder-form,
+  .course-card-form,
+  .free-video-form,
+  .resource-form,
+  .builder-row {
+    grid-template-columns: 1fr;
+  }
+
+  .builder-hero {
+    display: grid;
+    padding: 16px;
+  }
+
+  .builder-panel {
+    padding: 16px;
+    border-radius: 18px;
+  }
+}

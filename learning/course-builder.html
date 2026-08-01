@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Builder | Uncut_Lesson</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="course-builder.css">
+  <script src="course-builder.js" defer></script>
+</head>
+<body>
+  <main class="builder-shell">
+    <header class="builder-hero">
+      <div>
+        <p class="builder-eyebrow">Private Admin Tool</p>
+        <h1>Course Builder</h1>
+        <p>Add learning topic links, update course cards, and manage free video links from one place.</p>
+      </div>
+      <nav class="builder-links" aria-label="Builder links">
+        <a href="index.html">Learning</a>
+        <a href="../courses.html">Courses</a>
+      </nav>
+    </header>
+
+    <section class="builder-tabs" aria-label="Builder tools">
+      <button class="is-active" type="button" data-tool-tab="learning">Learning Topics</button>
+      <button type="button" data-tool-tab="courses">Course Cards</button>
+      <button type="button" data-tool-tab="free">Free Videos</button>
+      <button type="button" data-tool-tab="resources">Free Resources</button>
+    </section>
+
+    <section class="builder-panel" data-tool-panel="learning">
+      <div class="builder-title">
+        <p class="builder-eyebrow">learning/learning.js</p>
+        <h2>Add Topic + Link To Learning Page</h2>
+      </div>
+      <div class="builder-form">
+        <label>
+          <span>Select Course</span>
+          <select data-learning-course></select>
+        </label>
+        <label>
+          <span>How Many Topics</span>
+          <input type="number" min="1" max="100" value="5" data-learning-count>
+        </label>
+        <button type="button" data-learning-fields>Create Fields</button>
+      </div>
+      <div class="builder-list" data-learning-list></div>
+      <div class="builder-actions">
+        <button type="button" data-learning-preview>Preview Code</button>
+        <button type="button" data-learning-save>Save Into learning.js</button>
+      </div>
+      <p class="builder-status" data-learning-status></p>
+      <textarea class="builder-output" data-learning-output readonly spellcheck="false"></textarea>
+    </section>
+
+    <section class="builder-panel" data-tool-panel="courses" hidden>
+      <div class="builder-title">
+        <p class="builder-eyebrow">courses.html</p>
+        <h2>Change Course Name Or Add New Course</h2>
+      </div>
+      <div class="builder-form course-card-form">
+        <label>
+          <span>Action</span>
+          <select data-course-action>
+            <option value="update">Change Existing Course Card</option>
+            <option value="add">Add New Course Card</option>
+          </select>
+        </label>
+        <label>
+          <span>Course ID</span>
+          <input type="text" data-card-course-id placeholder="ms-basic">
+        </label>
+        <label>
+          <span>Course Name</span>
+          <input type="text" data-card-name placeholder="Basic Course">
+        </label>
+        <label>
+          <span>Subtitle</span>
+          <input type="text" data-card-subtitle placeholder="MS-Word, Paint">
+        </label>
+        <label>
+          <span>Price</span>
+          <input type="text" data-card-price placeholder="Rs 499">
+        </label>
+        <label>
+          <span>Image Path</span>
+          <input type="text" data-card-image placeholder="assets/Basic.jpg">
+        </label>
+      </div>
+      <div class="builder-actions">
+        <button type="button" data-card-preview>Preview Course Card</button>
+        <button type="button" data-card-save>Save Into courses.html</button>
+      </div>
+      <p class="builder-status" data-card-status></p>
+      <textarea class="builder-output" data-card-output readonly spellcheck="false"></textarea>
+    </section>
+
+    <section class="builder-panel" data-tool-panel="free" hidden>
+      <div class="builder-title">
+        <p class="builder-eyebrow">free-video pages</p>
+        <h2>Select Course, Topic, Then Add Free Video Link</h2>
+      </div>
+      <div class="builder-form free-video-form">
+        <label>
+          <span>Select Course</span>
+          <select data-free-course></select>
+        </label>
+        <label>
+          <span>Topic Mode</span>
+          <select data-free-mode>
+            <option value="create">Create New Topic Page</option>
+            <option value="existing">Add Link To Existing Topic Page</option>
+          </select>
+        </label>
+        <label>
+          <span>Topic Name</span>
+          <input type="text" data-free-topic placeholder="MS Word Introduction">
+        </label>
+        <label>
+          <span>How Many Video Links</span>
+          <input type="number" min="1" max="20" value="1" data-free-count>
+        </label>
+        <button type="button" data-free-fields>Create Link Fields</button>
+      </div>
+      <div class="builder-list" data-free-list></div>
+      <div class="builder-actions">
+        <button type="button" data-free-preview>Preview Free Video Code</button>
+        <button type="button" data-free-save-page>Save / Update Topic Page</button>
+        <button type="button" data-free-save-list>Add Topic Button To Course List</button>
+      </div>
+      <p class="builder-status" data-free-status></p>
+      <textarea class="builder-output" data-free-output readonly spellcheck="false"></textarea>
+    </section>
+
+    <section class="builder-panel" data-tool-panel="resources" hidden>
+      <div class="builder-title">
+        <p class="builder-eyebrow">free-resources.js</p>
+        <h2>Add PDF Or Drive Folder Download Button</h2>
+      </div>
+      <div class="builder-form resource-form">
+        <label>
+          <span>How Many Resources</span>
+          <input type="number" min="1" max="50" value="1" data-resource-count>
+        </label>
+        <button type="button" data-resource-fields>Create Resource Fields</button>
+      </div>
+      <div class="builder-list" data-resource-list></div>
+      <div class="builder-actions">
+        <button type="button" data-resource-preview>Preview Resources Code</button>
+        <button type="button" data-resource-save>Save Into free-resources.js</button>
+      </div>
+      <p class="builder-status" data-resource-status></p>
+      <textarea class="builder-output" data-resource-output readonly spellcheck="false"></textarea>
+    </section>
+  </main>
+</body>
+</html>

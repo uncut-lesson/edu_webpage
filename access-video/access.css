@@ -1,0 +1,333 @@
+:root {
+  --bg: #eef4ff;
+  --text: #16325c;
+  --muted: #5f7494;
+  --primary: #1f6fff;
+  --teal: #0f9f8f;
+  --accent: #ffb200;
+  --line: rgba(22, 50, 92, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Manrope", sans-serif;
+  color: var(--text);
+  background:
+    linear-gradient(rgba(248, 251, 255, 0.9), rgba(238, 245, 255, 0.96)),
+    url("../assets/Logo Background.jpeg") center / cover fixed no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.access-shell {
+  width: min(1160px, calc(100% - 32px));
+  margin: 22px auto 38px;
+  display: grid;
+  gap: 20px;
+}
+
+.access-topbar {
+  position: sticky;
+  top: 14px;
+  z-index: 50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 16px 36px rgba(22, 50, 92, 0.1);
+}
+
+.access-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text);
+  font-family: "Outfit", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.access-brand img {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+.access-links {
+  display: flex;
+  gap: 10px;
+}
+
+.access-links a,
+.access-primary,
+.access-secondary,
+.access-course-card a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 16px;
+  border-radius: 999px;
+  font-weight: 900;
+}
+
+.access-links a,
+.access-secondary {
+  color: var(--text);
+  background: #f7fbff;
+  border: 1px solid var(--line);
+}
+
+.access-links .access-referral-link {
+  color: #071b36;
+  background: linear-gradient(135deg, #fff7dc, #ffffff);
+  border-color: rgba(255, 178, 0, 0.34);
+  box-shadow: 0 12px 24px rgba(255, 178, 0, 0.14);
+}
+
+.access-primary,
+.access-course-card a {
+  color: #ffffff;
+  background: linear-gradient(135deg, var(--primary), var(--teal));
+  box-shadow: 0 14px 28px rgba(31, 111, 255, 0.18);
+}
+
+.access-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 360px);
+  gap: 22px;
+  align-items: stretch;
+  padding: 34px;
+  border-radius: 24px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  box-shadow: 0 22px 60px rgba(22, 50, 92, 0.12);
+}
+
+.access-eyebrow,
+.access-course-card span,
+.access-hero-panel span {
+  margin: 0;
+  color: var(--primary);
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.access-hero h1 {
+  margin: 8px 0 12px;
+  max-width: 760px;
+  font-family: "Outfit", sans-serif;
+  font-size: clamp(2.25rem, 5vw, 4.35rem);
+  line-height: 0.98;
+}
+
+.access-hero p {
+  max-width: 700px;
+  color: var(--muted);
+  font-size: 1.02rem;
+  font-weight: 700;
+  line-height: 1.65;
+}
+
+.access-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.access-hero-panel {
+  display: grid;
+  align-content: center;
+  gap: 12px;
+  padding: 24px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #f7fbff, #fffaf0);
+  border: 1px solid rgba(31, 111, 255, 0.12);
+}
+
+.access-hero-panel strong {
+  font-size: 1.55rem;
+  line-height: 1.15;
+}
+
+.access-courses {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.access-course-card {
+  display: grid;
+  grid-template-columns: 94px minmax(0, 1fr) auto;
+  gap: 16px;
+  align-items: center;
+  padding: 16px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.97);
+  border: 1px solid var(--line);
+  box-shadow: 0 14px 34px rgba(22, 50, 92, 0.08);
+}
+
+.access-course-card img {
+  width: 94px;
+  height: 94px;
+  border-radius: 16px;
+  object-fit: cover;
+  background: #f7fbff;
+}
+
+.access-course-card h2 {
+  margin: 4px 0;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.22rem;
+  line-height: 1.15;
+}
+
+.access-course-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+@media (max-width: 767px) {
+  .access-shell {
+    width: calc(100% - 12px);
+    margin: 8px auto 22px;
+    gap: 12px;
+  }
+
+  .access-topbar {
+    top: 6px;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    border-radius: 14px;
+  }
+
+  .access-brand {
+    justify-content: center;
+  }
+
+  .access-brand img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .access-links {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .access-links a {
+    min-height: 40px;
+    padding: 0 10px;
+    font-size: 0.9rem;
+  }
+
+  .access-hero {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 16px;
+    border-radius: 18px;
+  }
+
+  .access-hero h1 {
+    font-size: clamp(1.9rem, 10vw, 2.8rem);
+  }
+
+  .access-hero p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .access-hero-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .access-hero-panel {
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  .access-courses {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .access-course-card {
+    grid-template-columns: 68px minmax(0, 1fr);
+    gap: 12px;
+    padding: 12px;
+    border-radius: 16px;
+  }
+
+  .access-course-card img {
+    width: 68px;
+    height: 68px;
+    border-radius: 14px;
+  }
+
+  .access-course-card h2 {
+    font-size: 1.05rem;
+  }
+
+  .access-course-card p {
+    font-size: 0.86rem;
+  }
+
+  .access-course-card a {
+    grid-column: 1 / -1;
+    min-height: 42px;
+    border-radius: 12px;
+  }
+}
+
+/* Shared premium finish for the private course portal */
+.access-ad {
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr);
+  gap: 14px;
+  align-items: center;
+  padding: 14px;
+  border: 1px solid rgba(31, 111, 255, 0.15);
+  border-radius: 18px;
+  background: linear-gradient(135deg, #eef3ff, #f8fffc);
+}
+
+.access-ad img { width: 88px; height: 104px; border-radius: 12px; object-fit: cover; }
+.access-ad span { color: var(--primary); font-size: .68rem; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
+.access-ad h2 { margin: 4px 0 0; font: 700 1.16rem/1.15 "Outfit", sans-serif; }
+.access-ad p { margin: 6px 0 10px; color: var(--muted); font-size: .78rem; line-height: 1.45; }
+.access-ad a { display: inline-flex; align-items: center; justify-content: center; min-height: 38px; padding: 0 12px; border-radius: 10px; color: #ffffff; background: var(--primary); font-size: .74rem; font-weight: 900; }
+.access-footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; padding: 16px; border-radius: 16px; color: #cbd8ed; background: #14243f; font-size: .72rem; font-weight: 700; }
+.access-footer div { display: flex; flex-wrap: wrap; gap: 7px; }
+.access-footer a { color: #ffffff; }
+
+@media (max-width: 767px) {
+  .access-ad { grid-template-columns: 78px minmax(0, 1fr); }
+  .access-ad img { width: 78px; height: 94px; }
+  .access-footer { display: grid; }
+}
